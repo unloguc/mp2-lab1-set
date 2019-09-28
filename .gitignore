@@ -26,3 +26,5 @@
 *.exe
 *.out
 *.app
+/.vs/mp2-lab1-set/v16/Browse.VC.opendb
+/.vs/mp2-lab1-set/v16/Browse.VC.db
