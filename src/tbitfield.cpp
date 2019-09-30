@@ -37,7 +37,7 @@ int TBitField::GetLength(void) const // получить длину (к-во б�
 }
 
 void TBitField::SetBit(const int n) // установить бит
-{
+{ 
 }
 
 void TBitField::ClrBit(const int n) // очистить бит
