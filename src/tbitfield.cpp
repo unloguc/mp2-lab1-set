@@ -146,8 +146,7 @@ istream& operator>>(istream& istr, TBitField& bf) // ввод
 	do
 	{
 		istr >> str;
-	}
-	while(str !=' ')
+	} while (str != ' ');
 
 	return istr;
 }

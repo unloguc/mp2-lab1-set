@@ -26,7 +26,7 @@
 *.exe
 *.out
 *.app
-/.vs
+/.vs/**
 /sln/vc10/.vs/bitfield/v16
-/sln
-/out
+/sln/**
+/out/**
