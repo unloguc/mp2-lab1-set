@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/gtest
+# Install script for directory: C:/Users/pasuh/source/repos/mp2-lab1-set/gtest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

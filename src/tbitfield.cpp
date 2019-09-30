@@ -108,17 +108,34 @@ int TBitField::operator!=(const TBitField& bf) const // сравнение
 
 TBitField TBitField::operator|(const TBitField& bf) // операция "или"
 {
-	return TBitField(1);
+	int len;
+	(bf.BitLen <= BitLen) ? (len = BitLen) : (len = bf.BitLen);
+	TBitField tmp(len);
+	for (int i = 0; i < MemLen; i++)
+		tmp.pMem[i] = pMem[i];
+	for (int i = 0; i < tmp.MemLen;i++)
+		tmp.pMem[i] |= bf.pMem[i];
+	return tmp;
 }
 
 TBitField TBitField::operator&(const TBitField& bf) // операция "и"
 {
-	return TBitField(1);
+	int len;
+	(bf.BitLen <= BitLen) ? (len = BitLen) : (len = bf.BitLen);
+	TBitField tmp(len);
+	for (int i = 0; i < MemLen; i++)
+		tmp.pMem[i] = pMem[i];
+	for (int i = 0; i < tmp.MemLen; i++)
+		tmp.pMem[i] &= bf.pMem[i];
+	return tmp;
 }
 
 TBitField TBitField::operator~(void) // отрицание
 {
-	return TBitField(1);
+	TBitField tmp(BitLen);
+	for (int i = 0; i < MemLen; i++)
+		tmp.pMem[i] = ~pMem[i];
+	return tmp;
 }
 
 // ввод/вывод

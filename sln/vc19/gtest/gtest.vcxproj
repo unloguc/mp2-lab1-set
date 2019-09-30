@@ -14,7 +14,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{C114AE46-D993-3B8A-B8FA-B5E3EF94D81A}</ProjectGuid>
+    <ProjectGuid>{49501464-187D-3414-BEE3-5F5530B3D35E}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -41,18 +41,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\sln\vc19\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\pasuh\source\repos\mp2-lab1-set\sln\vc19\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gtest.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">gtest</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\sln\vc19\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\pasuh\source\repos\mp2-lab1-set\sln\vc19\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gtest.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">gtest</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -70,10 +70,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -86,7 +86,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -104,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\include;C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pasuh\source\repos\mp2-lab1-set\include;C:\Users\pasuh\source\repos\mp2-lab1-set\gtest;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -119,10 +119,10 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/gtest/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\pasuh\source\repos\mp2-lab1-set\gtest\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/pasuh/source/repos/mp2-lab1-set/gtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Дима/source/repos/unloguc/mp2-lab1-set -BC:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19/gtest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pasuh/source/repos/mp2-lab1-set -BC:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19/gtest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -131,11 +131,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\sln\vc19\gtest\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\pasuh\source\repos\mp2-lab1-set\sln\vc19\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/gtest/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/pasuh/source/repos/mp2-lab1-set/gtest/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Дима/source/repos/unloguc/mp2-lab1-set -BC:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19/gtest/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pasuh/source/repos/mp2-lab1-set -BC:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19/gtest/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -144,16 +144,16 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\sln\vc19\gtest\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\pasuh\source\repos\mp2-lab1-set\sln\vc19\gtest\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\gtest\gtest-all.cc" />
+    <ClCompile Include="C:\Users\pasuh\source\repos\mp2-lab1-set\gtest\gtest-all.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Дима\source\repos\unloguc\mp2-lab1-set\sln\vc19\ZERO_CHECK.vcxproj">
-      <Project>{3E428D16-D382-313D-AB30-AAAFF87A47F4}</Project>
+    <ProjectReference Include="C:\Users\pasuh\source\repos\mp2-lab1-set\sln\vc19\ZERO_CHECK.vcxproj">
+      <Project>{02128299-F8D6-3E4D-B1D2-0295B39AC866}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
