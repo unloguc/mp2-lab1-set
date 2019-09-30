@@ -142,11 +142,19 @@ TBitField TBitField::operator~(void) // отрицание
 
 istream& operator>>(istream& istr, TBitField& bf) // ввод
 {
+	char str;
+	do
+	{
+		istr >> str;
+	}
+	while(str !=' ')
+
 	return istr;
 }
 
 
 ostream& operator<<(ostream& ostr, const TBitField& bf) // вывод
 {
+
 	return ostr;
 }
