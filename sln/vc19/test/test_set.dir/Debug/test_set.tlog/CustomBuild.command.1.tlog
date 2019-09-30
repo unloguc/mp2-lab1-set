@@ -1,6 +1,6 @@
-^C:\USERS\PASUH\SOURCE\REPOS\MP2-LAB1-SET\TEST\CMAKELISTS.TXT
+^C:\USERS\ДИМА\SOURCE\REPOS\UNLOGUC\MP2-LAB1-SET\TEST\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/pasuh/source/repos/mp2-lab1-set -BC:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/pasuh/source/repos/mp2-lab1-set/sln/vc19/test/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Дима/source/repos/unloguc/mp2-lab1-set -BC:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19 --check-stamp-file C:/Users/Дима/source/repos/unloguc/mp2-lab1-set/sln/vc19/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
