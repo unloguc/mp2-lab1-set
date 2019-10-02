@@ -4,7 +4,7 @@
 //   Переработано для Microsoft Visual Studio 2008 Сысоевым А.В. (19.04.2015)
 //
 // Битовое поле
-
+#include <vector>
 #include "tbitfield.h"
 
 TBitField::TBitField(int len) :BitLen(len), MemLen((len - 1) / sizeof(TELEM)*8 + 1)
@@ -148,7 +148,7 @@ istream& operator>>(istream& istr, TBitField& bf) // ввод
 {
 	string tmp;
 	istr >> tmp;
-	if (tmp.size() != bf.GetLength())
+	if (tmp.size() > bf.GetLength())
 		throw "Incorrect length";
 	for (int i = 0; i < bf.BitLen; i++)
 	{
@@ -167,10 +167,7 @@ ostream& operator<<(ostream& ostr, const TBitField& bf) // вывод
 {
 	for (int i = 0; i < bf.BitLen; i++)
 	{
-		if (bf.GetBit(i))
-			ostr << 1;
-		else
-			ostr << 0;
+			ostr << bf.GetBit(i);
 	}
 	return ostr;
 }
