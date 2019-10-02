@@ -9,8 +9,6 @@
 
 TSet::TSet(int mp) : BitField(mp),MaxPower(mp)
 {
-	if (mp < 0)
-		throw("Len is incorrect");
 }
 
 // конструктор копирования
@@ -25,7 +23,8 @@ TSet::TSet(const TBitField &bf) : BitField(bf),MaxPower(bf.GetLength())
 
 TSet::operator TBitField()
 {
-  return BitField;
+	TBitField temp(this->BitField);
+	return temp;
 }
 
 int TSet::GetMaxPower(void) const // получить макс. к-во эл-тов
@@ -40,11 +39,13 @@ int TSet::IsMember(const int Elem) const // элемент множества?
 
 void TSet::InsElem(const int Elem) // включение элемента множества
 {
+	if (Elem <= MaxPower)
 	BitField.SetBit(Elem);
 }
 
 void TSet::DelElem(const int Elem) // исключение элемента множества
 {
+	if (Elem <= MaxPower)
 	BitField.ClrBit(Elem);
 }
 
@@ -53,24 +54,23 @@ void TSet::DelElem(const int Elem) // исключение элемента мн
 TSet& TSet::operator=(const TSet &s) // присваивание
 {
 	BitField = s.BitField;
-	MaxPower = s.MaxPower;
+	MaxPower = s.GetMaxPower();
   return *this;
 }
 
 int TSet::operator==(const TSet &s) const // сравнение
 {
-    return 0;
+	return BitField == s.BitField;
 }
 
 int TSet::operator!=(const TSet &s) const // сравнение
 {
-  return 0;
+	return BitField != s.BitField;
 }
 
 TSet TSet::operator+(const TSet &s) // объединение
 {
-	TSet tmp(BitField);
-	tmp.BitField=tmp.BitField | s.BitField;
+	TSet tmp(BitField|s.BitField);
   return tmp;
 }
 
