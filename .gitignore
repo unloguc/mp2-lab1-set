@@ -26,7 +26,7 @@
 *.exe
 *.out
 *.app
-/.vs/mp2-lab1-set/v16/Browse.VC.opendb
-/.vs/mp2-lab1-set/v16/Browse.VC.db
+/.vs/**
 /sln/vc10/.vs/bitfield/v16
-/sln/vc19/.vs/set/v16
+/sln/**
+/out/**
