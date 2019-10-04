@@ -7,7 +7,7 @@
 #include <vector>
 #include "tbitfield.h"
 
-TBitField::TBitField(int len) :BitLen(len), MemLen(((len - 1) / (sizeof(TELEM)*8)) + 1)
+TBitField::TBitField(int len) :BitLen(len), MemLen((len +7) >>3)
 {
 	if (len < 0)
 		throw("Len is incorrect");
@@ -30,18 +30,18 @@ TBitField::~TBitField()
 
 int TBitField::GetMemIndex(const int n) const // индекс Мем для бита n
 {
-	if (n < 0 || n >= BitLen)
+	if (n < 0 || n > BitLen)
 		throw("index is incorrect");
 	else
-		return n >> 5;
+		return n >> 3;
 }
 
 TELEM TBitField::GetMemMask(const int n) const // битовая маска для бита n
 {
-	if (n < 0 || n >= BitLen)
+	if (n < 0 || n > BitLen)
 		throw(" index is incorrect");
 	else
-		return 1 << (n&31);
+		return 1 << (n&7);
 }
 
 // доступ к битам битового поля
@@ -53,25 +53,16 @@ int TBitField::GetLength(void) const // получить длину (к-во б�
 
 void TBitField::SetBit(const int n) // установить бит
 {
-	if ((n > -1) || (n < BitLen))
 		pMem[GetMemIndex(n)] |= GetMemMask(n);
-	else
-		throw("num is incorrect");
 }
 
 void TBitField::ClrBit(const int n) // очистить бит
 {
-	if ((n > -1) || (n < BitLen))
 		pMem[GetMemIndex(n)] &= ~GetMemMask(n);
-	else
-		throw("num is incorrect");
 }
 
 int TBitField::GetBit(const int n) const // получить значение бита
 {
-	if ((n <= -1) || (n >= BitLen))
-		throw("index is incorrect");
-	else
 		return pMem[GetMemIndex(n)] & GetMemMask(n);
 }
 
