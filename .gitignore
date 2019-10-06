@@ -27,5 +27,5 @@
 *.out
 *.app
 /sln/vc19/**
-/out/**
+/out/build/**
 /.vs/**
